@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Cartridge Semibold Soft";
+	src: url('/fonts/Cartridge-SemiboldSoft.woff2');
+}
+
+@font-face {
+	font-family: "Tilt Neon";
+	src: url('/fonts/TiltNeon-Regular.ttf');
+}
+
+body {
+	font-family: "Tilt Neon", sans-serif, system-ui;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+h1, h2, h3 {
+	font-family: "Cartridge Semibold Soft";
+	font-weight: normal;
+}
