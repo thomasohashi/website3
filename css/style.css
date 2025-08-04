@@ -1,0 +1,170 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: "Cartridge Semibold Soft";
+	src: url('/fonts/Cartridge-SemiboldSoft.woff2');
+}
+
+@font-face {
+	font-family: "Spagetty Regular";
+	src: url('/fonts/Spagetty-Regular.woff2')
+}
+
+@font-face {
+	font-family: "Spagetty Rough";
+	src: url('/fonts/Spagetty-Rough.woff2')
+}
+
+body {
+	font-family: "Spagetty Rough", sans-serif, system-ui;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+header, nav, main {
+	margin-inline: auto;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+h1, h2, h3 {
+	font-family: "Spagetty Rough";
+	font-weight: normal;
+}
+
+header {
+	padding-block: 2rem;
+	background: red;
+	color: white;
+}
+
+#logo {
+	display: block;
+	margin-inline: auto;
+	max-width: 800px;
+	height: auto;
+	fill: white;
+}
+
+header ul {
+	margin-block-end: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	justify-content: center;
+}
+
+header ul li {
+	margin-inline-end: 1rem;
+	margin-block-end: 0.25rem;
+	color: white;
+}
+
+/* Gallery */
+
+.portfolio-grid {
+	margin-inline: auto;
+	display: flex;
+	gap: 1rem;
+	margin-block-end: 1rem;
+}
+
+.portfolio-grid > .beer-label {
+	flex: 2;
+}
+
+.portfolio-grid > .beer-can {
+	flex: 0.7145;	
+}
+
+.portfolio-grid > div > img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+@media only screen and (max-width: 20em) {
+	.portfolio-grid {
+		display: grid;
+	}
+}
