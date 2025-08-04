@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Box sizing rules */
 *,
 *::before,
@@ -74,12 +75,15 @@ textarea:not([rows]) {
 
 /* Fonts */
 
+=======
+>>>>>>> main
 @font-face {
 	font-family: "Cartridge Semibold Soft";
 	src: url('/fonts/Cartridge-SemiboldSoft.woff2');
 }
 
 @font-face {
+<<<<<<< HEAD
 	font-family: "Spagetty Regular";
 	src: url('/fonts/Spagetty-Regular.woff2')
 }
@@ -167,4 +171,19 @@ header ul li {
 	.portfolio-grid {
 		display: grid;
 	}
+=======
+	font-family: "Tilt Neon";
+	src: url('/fonts/TiltNeon-Regular.ttf');
+}
+
+body {
+	font-family: "Tilt Neon", sans-serif, system-ui;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+h1, h2, h3 {
+	font-family: "Cartridge Semibold Soft";
+	font-weight: normal;
+>>>>>>> main
 }
